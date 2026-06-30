@@ -1,0 +1,50 @@
+{
+  // Copilot Settings, cf. https://code.visualstudio.com/docs/copilot/reference/copilot-settings
+  // General Copilot Settings 
+  "workbench.settings.showAISearchToggle": false,
+  "search.searchView.keywordSuggestions": false,
+  "chat.disableAIFeatures": false,
+  // Code editing settings
+  // "github.copilot.editor.enableCodeActions": false,
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
+  "github.copilot.enable": { // disable inline suggestions
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "typescript": false,
+    "javascript": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.nextEditSuggestions.fixes": false,
+  // "editor.inlineSuggest.edits.allowCodeShifting": "never",
+  // "editor.inlineSuggest.edits.renderSideBySide": "never",
+  "editor.inlineSuggest.edits.showCollapsed": false,
+  "editor.inlineSuggest.showToolbar": "never",
+  // Chat settings
+  "github.copilot.chat.localeOverride": "auto",
+  // Agent settings
+  // Agent sessions
+  // Code review settings
+  // 'Agent skills settings'
+  // Agent Plugin Settings
+  // other settings not listed on https://code.visualstudio.com/docs/copilot/reference/copilot-settings
+  // Telemetry
+  "redhat.telemetry.enabled": false,
+  "telemetry.feedback.enabled": false,
+  "github.copilot.chat.otel.enabled": false,
+  // Testing
+  "jest.useJest30": true,
+  "jest.outputConfig": {
+    "clearOnRun": "none",
+    "revealOn": "demand",
+    "revealWithFocus": "none"
+  },
+  "jest.runMode": {
+    "deferred": true,
+    "testFileOnly": true,
+    "type": "on-save"
+  },
+  "testing.automaticallyOpenTestResults": "neverOpen",
+  // Other
+  "js/ts.preferences.importModuleSpecifier": "relative" 
+}

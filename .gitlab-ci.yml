@@ -1,0 +1,13 @@
+image: registry.bht-berlin.de:443/templates/container/stc:WS25a
+
+stages:
+  - test
+  
+javascript:
+  stage: test
+  script:
+    - npm ci # like npm install, but faster (requires package-lock.json)
+    - npm run build # we need to build since we test the cli tool itself
+    - npm test -- --runInBand
+  coverage: '/^All files\s*\|\s*([0-9.]+)\s*\|.*/'
+  
